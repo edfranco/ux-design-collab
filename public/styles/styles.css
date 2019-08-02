@@ -55,25 +55,18 @@ main{
     overflow: scroll;
 }
 
-main .img-container{
-    background-image: url('../images/photo-nic-co-uk-nic-xOigCUcFdA8-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: content-box;
-    background-position: center;
-    height: 50vh;
-    color:white;
-    text-shadow: 2px 2px #000000;
-}
-
-main section{
-    position: absolute;
-}
 .form-container{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input{
