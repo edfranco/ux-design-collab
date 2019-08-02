@@ -172,10 +172,16 @@ footer a{
         color: white;
     }
 
+    .mobile-nav-links{
+        display: inline-block;
+        padding: 1em;
+    }
+
     .sidenav .mobile-nav-links a{
         color: white;
         padding: 10em 3em;
         font-size: 2em;
+        text-decoration: none;
     }
 
     nav .nav-button{
@@ -201,4 +207,6 @@ footer a{
         flex-direction: column;
     }
 }
+
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 
