@@ -1,6 +1,15 @@
 // HTML Template
 const afterSubmissionTemplate = `
-
+<h1>Thanks for subscribing!</h1>
+<div>
+    <p class='verification'>You'll be receving a verification email at</p>
+</div>
+<div>   
+    <p class="second">Once confirmed, you'll have access to our sweet, sweet content</p>
+</div> 
+    <div>
+        <img src="./public/images/Screen Shot 2019-08-01 at 3.37.45 PM.png">
+    </div>
 `
 
 //Const Variables 
@@ -34,5 +43,14 @@ navButton.addEventListener('click', event => {
 
 $clear.on('click', event => {
     $('main').empty();
-    $('main').append(`<h1>Some Text</h1>`)
+    $('main').append(afterSubmissionTemplate)
 })
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function () {
+    output.innerHTML = this.value;
+}
