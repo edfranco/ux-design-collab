@@ -106,6 +106,8 @@ footer a{
     
 }
 
+
+/* HOME START */
 @media only screen and (max-width:600px){
     
     body{
@@ -131,7 +133,7 @@ h1{
     font-size: 5em;
     padding: 0;
     margin: 0;
-    font-weight:
+    font-weight: 900;
 }
 .first{
     font-size: 2em;
@@ -147,4 +149,22 @@ li{
 }
 .third{
     font-size: 2em;
+}
+.top{
+    position:relative;
+}
+.button{
+    
+}
+.right{
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-around;
+    padding:0;
+    margin:0;
+}
+.left{
+    /* position: absolute; */
+    /* justify-content: space-between; */
+    display: flex;
 }
