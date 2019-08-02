@@ -172,10 +172,16 @@ footer a{
         color: white;
     }
 
+    .mobile-nav-links{
+        display: inline-block;
+        padding: 1em;
+    }
+
     .sidenav .mobile-nav-links a{
         color: white;
         padding: 10em 3em;
         font-size: 2em;
+        text-decoration: none;
     }
 
     nav .nav-button{

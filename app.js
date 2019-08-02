@@ -1,17 +1,13 @@
-// const input;
-// if (input.contains('@') && input.contains('.')) {
+// HTML Template
+const afterSubmissionTemplate = `
 
-// } else {
-//     console.log('Please input a valid email');
-// }
-
-// if(input.innerHTML = ''){
-//     console.log('Please input something')
-// }
+`
 
 //Const Variables 
 const navButton = document.getElementById('navButton');
 const sideNav = document.getElementById('sideNav');
+const $clear = $('.clear');
+console.log($clear);
 let toggle = false;
 
 
@@ -31,9 +27,12 @@ const untoggleSideNav = event => {
 navButton.addEventListener('click', event => {
     if (toggle === false) {
         toggleSideNav()
-        console.log(toggle)
     } else {
         untoggleSideNav()
-        console.log(toggle)
     }
 }, false)
+
+$clear.on('click', event => {
+    $('main').empty();
+    $('main').append(`<h1>Some Text</h1>`)
+})
