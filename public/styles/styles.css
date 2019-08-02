@@ -5,6 +5,14 @@ body{
     color:color;
 }
 
+.sidenav{
+    display:none;
+}
+
+.mobile-nav-links{
+    display: none;
+}
+
 nav{
     display: flex;
     flex-direction: column;
@@ -52,28 +60,24 @@ nav .mobile-nav-links{
 main{
     height: 100vh;
     background-color: whitesmoke;
-    overflow: scroll;
-}
-
-main .img-container{
-    background-image: url('../images/photo-nic-co-uk-nic-xOigCUcFdA8-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: content-box;
-    background-position: center;
-    height: 50vh;
-    color:white;
-    text-shadow: 2px 2px #000000;
-}
-
-main section{
-    position: absolute;
-}
-.form-container{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     
+}
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input{
@@ -85,22 +89,41 @@ input{
     font-size: 1em;
   }
 
-.cards-container{
-    background-color: rgb(246, 150, 72);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    
+
+  .first{
+    font-size: 2em;
+    padding:0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    font-size: 25px;
+}
+.second{
+    font-size: 2em;
+}
+.third{
+    font-size: 2em;
+}
+.top{
+    position:relative;
 }
 
-.card{
-    background-color: whitesmoke;
-    height: 40vh;
-    width: 20vw;
-    border: 1px solid black;
-    margin-right: 1em;
-    padding-right: 1em; 
+.right{
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-around;
+    padding:0;
+    margin:0;
 }
+.left{
+    /* position: absolute; */
+    /* justify-content: space-between; */
+    display: flex;
+}
+
+
+
 
 footer{
     display: flex;
