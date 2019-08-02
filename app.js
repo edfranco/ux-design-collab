@@ -17,6 +17,7 @@ const sideNav = document.getElementById('sideNav');
 // Functions
 const dropNav = (event) => {
     sideNav.style.width = "50vw";
+    sideNav.style.display = "block"
 }
 
 navButton.addEventListener('click', dropNav, false)
